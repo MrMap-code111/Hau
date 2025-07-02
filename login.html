@@ -10,13 +10,6 @@
     <div class="col-md-4 offset-md-4">
         <h3 class="text-center">Đăng Nhập</h3>
         <form method="POST">
-            {% with messages = get_flashed_messages(with_categories=true) %}
-              {% if messages %}
-                {% for category, message in messages %}
-                  <div class="alert alert-{{ category }}">{{ message }}</div>
-                {% endfor %}
-              {% endif %}
-            {% endwith %}
             <div class="mb-3">
                 <label for="username" class="form-label">Tên đăng nhập</label>
                 <input type="text" class="form-control" name="username" value="Hau">
